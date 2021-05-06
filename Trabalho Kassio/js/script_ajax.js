@@ -2,7 +2,9 @@ $ (function() {
     const tbody = $('.table tbody');
 
     function obterDados() {
-        $.ajax('https://jsonplaceholder.typicode.com/users', {
+
+
+        $.ajax('https://6091e78e85ff510017211bf4.mockapi.io/api/filmes/filmes', {
             type:'GET',
             beforeSend: function(){
                 $('.table').after('<p class="loading"> Aguarde carregamento</p>');
@@ -23,12 +25,9 @@ $ (function() {
             $.each(dados, function(i,el){
                 tbody.append(`<tr>
                                 <th scope="row">${el.id}</th>
-                                <td>${el.name}</td>
-                                <td>${el.username}</td>
-                                <td>${el.email}</td>
-                                <td>${el.address.city}</td>
-                                <td>${el.phone}</td>
-                                <td>${el.company.name}</td>
+                                <td>${el.nome}</td>
+                                <td>${el.codigo_netflix}</td>
+                                <td>${el.descricao}</td>
                             </tr>`)
             })
             
