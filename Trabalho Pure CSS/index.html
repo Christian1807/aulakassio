@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pure-min.css">
+    <title>Trabalho Pure.CSS</title>
+</head>
+<body>
+    
+    <div>
+        <H1>Exemplo 1 - Botão</H1>    
+        <a class="pure-button" href="#">A Pure Button</a>
+        <button class="pure-button">A Pure Button</button>
+    </div>
+
+    <div>
+        <H1>Exemplo 2 - Botão</H1>    
+        <a class="pure-button pure-button-primary" href="#">A Primary Button</a>
+        <button class="pure-button pure-button-primary">A Primary Button</button>
+    </div>
+
+    <div>
+        <H1>Exemplo 3 - Menu Vertical</H1>    
+        <div class="pure-menu pure-menu-horizontal">
+            <a href="#" class="pure-menu-heading pure-menu-link">BRAND</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item">
+                    <a href="#" class="pure-menu-link">News</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="#" class="pure-menu-link">Sports</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="#" class="pure-menu-link">Finance</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <H1>Exemplo 4 - Formulário</H1>    
+        <form class="pure-form">
+            <fieldset>
+                <legend>A compact inline form</legend>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <label for="default-remember">
+                    <input type="checkbox" id="default-remember" /> Remember me</label>
+                <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+        <H1>Exemplo 5 - Botões coloridos</H1>    
+        <div>
+            <style scoped="">
+                .button-success,
+                .button-error,
+                .button-warning,
+                .button-secondary {
+                    color: white;
+                    border-radius: 4px;
+                    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+                }
+        
+                .button-success {
+                    background: rgb(28, 184, 65);
+                    /* this is a green */
+                }
+        
+                .button-error {
+                    background: rgb(202, 60, 60);
+                    /* this is a maroon */
+                }
+        
+                .button-warning {
+                    background: rgb(223, 117, 20);
+                    /* this is an orange */
+                }
+        
+                .button-secondary {
+                    background: rgb(66, 184, 221);
+                    /* this is a light blue */
+                }
+            </style>
+            <button class="button-success pure-button">Success Button</button>
+            <button class="button-error pure-button">Error Button</button>
+            <button class="button-warning pure-button">Warning Button</button>
+            <button class="button-secondary pure-button">Secondary Button</button>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
